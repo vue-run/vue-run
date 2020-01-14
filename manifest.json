@@ -1,0 +1,25 @@
+{
+  "name": "vue-press",
+  "short_name": "vue-run",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#2196f3",
+  "description": "打造一个溜溜的前端工作流",
+  "theme_color": "blue",
+  "icons": [
+    {
+      "src": "./hero",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "related_applications": [
+    {
+      "platform": "web"
+    },
+    {
+      "platform": "play",
+      "url": ""
+    }
+  ]
+}
