@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Webpack | vue-run</title>
+    <meta name="description" content="打造一个舒适的前端工作流">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.31620747.css" as="style"><link rel="preload" href="/assets/js/app.ad74b50b.js" as="script"><link rel="preload" href="/assets/js/2.2054c3ab.js" as="script"><link rel="preload" href="/assets/js/44.68a308ee.js" as="script"><link rel="prefetch" href="/assets/js/10.2fcb329f.js"><link rel="prefetch" href="/assets/js/11.aa231dd9.js"><link rel="prefetch" href="/assets/js/12.9f1fdf0e.js"><link rel="prefetch" href="/assets/js/13.d119215d.js"><link rel="prefetch" href="/assets/js/14.de9dfb60.js"><link rel="prefetch" href="/assets/js/15.15c1321a.js"><link rel="prefetch" href="/assets/js/16.d047a64e.js"><link rel="prefetch" href="/assets/js/17.fa9b699d.js"><link rel="prefetch" href="/assets/js/18.d4110752.js"><link rel="prefetch" href="/assets/js/19.e47e31ff.js"><link rel="prefetch" href="/assets/js/20.c21ff74b.js"><link rel="prefetch" href="/assets/js/21.403ef4cb.js"><link rel="prefetch" href="/assets/js/22.afbc471c.js"><link rel="prefetch" href="/assets/js/23.8fc68b7a.js"><link rel="prefetch" href="/assets/js/24.aaa61bbc.js"><link rel="prefetch" href="/assets/js/25.1546e7a8.js"><link rel="prefetch" href="/assets/js/26.d61179ba.js"><link rel="prefetch" href="/assets/js/27.357b1395.js"><link rel="prefetch" href="/assets/js/28.cc219ae3.js"><link rel="prefetch" href="/assets/js/29.b6955861.js"><link rel="prefetch" href="/assets/js/3.a4e279d6.js"><link rel="prefetch" href="/assets/js/30.043e4801.js"><link rel="prefetch" href="/assets/js/31.c1b8cf35.js"><link rel="prefetch" href="/assets/js/32.42958bd6.js"><link rel="prefetch" href="/assets/js/33.e126e05f.js"><link rel="prefetch" href="/assets/js/34.6864e25a.js"><link rel="prefetch" href="/assets/js/35.aeeec13a.js"><link rel="prefetch" href="/assets/js/36.a3946cf6.js"><link rel="prefetch" href="/assets/js/37.b4478e59.js"><link rel="prefetch" href="/assets/js/38.574146f4.js"><link rel="prefetch" href="/assets/js/39.3cd37280.js"><link rel="prefetch" href="/assets/js/4.c0861a31.js"><link rel="prefetch" href="/assets/js/40.c5a34540.js"><link rel="prefetch" href="/assets/js/41.7f323d85.js"><link rel="prefetch" href="/assets/js/42.d31181fa.js"><link rel="prefetch" href="/assets/js/43.6e0bf2e6.js"><link rel="prefetch" href="/assets/js/45.2ef9d7c8.js"><link rel="prefetch" href="/assets/js/46.5441fd11.js"><link rel="prefetch" href="/assets/js/47.fab1189a.js"><link rel="prefetch" href="/assets/js/48.ff364c5c.js"><link rel="prefetch" href="/assets/js/49.25efaf4d.js"><link rel="prefetch" href="/assets/js/5.a116802f.js"><link rel="prefetch" href="/assets/js/50.ec8ad626.js"><link rel="prefetch" href="/assets/js/51.d1f171f3.js"><link rel="prefetch" href="/assets/js/52.100e2510.js"><link rel="prefetch" href="/assets/js/53.f7e297ba.js"><link rel="prefetch" href="/assets/js/54.d0716ad6.js"><link rel="prefetch" href="/assets/js/55.6984554f.js"><link rel="prefetch" href="/assets/js/56.c9d4b98a.js"><link rel="prefetch" href="/assets/js/57.1736acb1.js"><link rel="prefetch" href="/assets/js/58.1e194851.js"><link rel="prefetch" href="/assets/js/59.cc8df9af.js"><link rel="prefetch" href="/assets/js/6.f95efe2a.js"><link rel="prefetch" href="/assets/js/60.6a846f1a.js"><link rel="prefetch" href="/assets/js/61.e0a08076.js"><link rel="prefetch" href="/assets/js/62.5b3128e3.js"><link rel="prefetch" href="/assets/js/63.d9c80c61.js"><link rel="prefetch" href="/assets/js/64.686b1cb0.js"><link rel="prefetch" href="/assets/js/65.ce207947.js"><link rel="prefetch" href="/assets/js/66.cea7a33b.js"><link rel="prefetch" href="/assets/js/67.6bf9f16e.js"><link rel="prefetch" href="/assets/js/68.c3755fba.js"><link rel="prefetch" href="/assets/js/69.1987d1f9.js"><link rel="prefetch" href="/assets/js/7.60e754f0.js"><link rel="prefetch" href="/assets/js/70.55bd8888.js"><link rel="prefetch" href="/assets/js/71.3f35de42.js"><link rel="prefetch" href="/assets/js/72.249f0def.js"><link rel="prefetch" href="/assets/js/73.e19ee3e7.js"><link rel="prefetch" href="/assets/js/8.d7e7dd67.js"><link rel="prefetch" href="/assets/js/9.b3d60b51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.31620747.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">vue-run</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link router-link-exact-active router-link-active">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link router-link-exact-active router-link-active">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Webpack</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/interview/Webpack.html#实现原理" class="sidebar-link">实现原理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-webpack-原理" class="sidebar-link">1. webpack 原理</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-tree-shaking-的原理" class="sidebar-link">2. tree-shaking 的原理</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_3-压缩、合并、打包实现的原理" class="sidebar-link">3. 压缩、合并、打包实现的原理</a></li></ul></li><li><a href="/interview/Webpack.html#构建和生命周期" class="sidebar-link">构建和生命周期</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-介绍下-webpack-的整个生命周期" class="sidebar-link">1. 介绍下 Webpack 的整个生命周期</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-webpack-的构建流程" class="sidebar-link">2. webpack 的构建流程</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_3-webpack-如何做异步加载" class="sidebar-link">3. webpack 如何做异步加载</a></li></ul></li><li><a href="/interview/Webpack.html#横向对比" class="sidebar-link">横向对比</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-css-loader-和-style-loader-的对比" class="sidebar-link">1.css-loader 和 style-loader 的对比</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-webpack-与-gulp-的区别" class="sidebar-link">2. webpack 与 gulp 的区别</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_3-cjs和esm在-打包过程中的区别" class="sidebar-link">3. cjs和esm在 打包过程中的区别</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_4-webpack-的-loader-和-plugin-的对比" class="sidebar-link">4. webpack 的 loader 和 plugin 的对比</a></li></ul></li><li><a href="/interview/Webpack.html#编译-开发环境" class="sidebar-link">编译</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-webpack-怎么处理内联-css-的" class="sidebar-link">1. webpack 怎么处理内联 css 的</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-dev-server-是怎么跑起来的" class="sidebar-link">2. dev-server 是怎么跑起来的</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_3-webpack-热更新的原理" class="sidebar-link">3. webpack 热更新的原理</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_4-热更新的优化方式" class="sidebar-link">4. 热更新的优化方式</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_5-怎么配置开发环境的？" class="sidebar-link">5. 怎么配置开发环境的？</a></li></ul></li><li><a href="/interview/Webpack.html#打包-生产-测试环境" class="sidebar-link">打包</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-webpack的分包策略" class="sidebar-link">1. webpack的分包策略</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-webpack-怎么配置抽取公共文件" class="sidebar-link">2. webpack 怎么配置抽取公共文件</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_3-如何配置把-js、css、html-单独打包成一个文件" class="sidebar-link">3.如何配置把 js、css、html 单独打包成一个文件</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_4-如何实现分模块打包（多入口）" class="sidebar-link">4. 如何实现分模块打包（多入口）</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_5-如何优化包体积？" class="sidebar-link">5. 如何优化包体积？</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_6-hash-码是怎么生成的？如何避免hash重复的情况？" class="sidebar-link">6. hash 码是怎么生成的？如何避免hash重复的情况？</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_7-使用-import-时，node-modules-里的依赖会做什么" class="sidebar-link">7. 使用 import 时，node_modules 里的依赖会做什么</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_9-多个活动页，如何实现单独打包指定个活动？" class="sidebar-link">9. 多个活动页，如何实现单独打包指定个活动？</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_10-webpack一般怎么组织-css" class="sidebar-link">10.  webpack一般怎么组织 CSS</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_11-如何利用localstorage持久化缓存" class="sidebar-link">11.  如何利用localstorage持久化缓存</a></li></ul></li><li><a href="/interview/Webpack.html#plugin" class="sidebar-link">Plugin</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-plugin的实现原理" class="sidebar-link">1. plugin的实现原理</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-用过哪些常用plugin，解决什么问题" class="sidebar-link">2. 用过哪些常用plugin，解决什么问题</a></li></ul></li><li><a href="/interview/Webpack.html#loader" class="sidebar-link">Loader</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_1-loader的原理" class="sidebar-link">1. loader的原理</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_2-用过哪些常用loader，解决什么问题" class="sidebar-link">2. 用过哪些常用loader，解决什么问题</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_3-css-loader-和-style-loader-的区别" class="sidebar-link">3. css-loader 和 style-loader 的区别</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_4-file-loader-和-url-loader-的区别" class="sidebar-link">4. file-loader 和 url-loader 的区别</a></li><li class="sidebar-sub-header"><a href="/interview/Webpack.html#_5-如何配-sass，需要配哪些-loader" class="sidebar-link">5. 如何配 sass，需要配哪些 loader</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="webpack"><a href="#webpack" class="header-anchor">#</a> Webpack</h1> <p><img src="/assets/img/webpack.c3ea52ec.png" alt="Webpack"></p><div class="table-of-contents"><ul><li><a href="#实现原理">实现原理</a><ul><li><a href="#_1-webpack-原理">1. webpack 原理</a></li><li><a href="#_2-tree-shaking-的原理">2. tree-shaking 的原理</a></li><li><a href="#_3-压缩、合并、打包实现的原理">3. 压缩、合并、打包实现的原理</a></li></ul></li><li><a href="#构建和生命周期">构建和生命周期</a><ul><li><a href="#_1-介绍下-webpack-的整个生命周期">1. 介绍下 Webpack 的整个生命周期</a></li><li><a href="#_2-webpack-的构建流程">2. webpack 的构建流程</a></li><li><a href="#_3-webpack-如何做异步加载">3. webpack 如何做异步加载</a></li></ul></li><li><a href="#横向对比">横向对比</a><ul><li><a href="#_1-css-loader-和-style-loader-的对比">1.css-loader 和 style-loader 的对比</a></li><li><a href="#_2-webpack-与-gulp-的区别">2. webpack 与 gulp 的区别</a></li><li><a href="#_3-cjs和esm在-打包过程中的区别">3. cjs和esm在 打包过程中的区别</a></li><li><a href="#_4-webpack-的-loader-和-plugin-的对比">4. webpack 的 loader 和 plugin 的对比</a></li></ul></li><li><a href="#编译-开发环境">编译&lt;开发环境&gt;</a><ul><li><a href="#_1-webpack-怎么处理内联-css-的">1. webpack 怎么处理内联 css 的</a></li><li><a href="#_2-dev-server-是怎么跑起来的">2. dev-server 是怎么跑起来的</a></li><li><a href="#_3-webpack-热更新的原理">3. webpack 热更新的原理</a></li><li><a href="#_4-热更新的优化方式">4. 热更新的优化方式</a></li><li><a href="#_5-怎么配置开发环境的？">5. 怎么配置开发环境的？</a></li></ul></li><li><a href="#打包-生产-测试环境">打包&lt;生产/测试环境&gt;</a><ul><li><a href="#_1-webpack的分包策略">1. webpack的分包策略</a></li><li><a href="#_2-webpack-怎么配置抽取公共文件">2. webpack 怎么配置抽取公共文件</a></li><li><a href="#_3-如何配置把-js、css、html-单独打包成一个文件">3.如何配置把 js、css、html 单独打包成一个文件</a></li><li><a href="#_4-如何实现分模块打包（多入口）">4. 如何实现分模块打包（多入口）</a></li><li><a href="#_5-如何优化包体积？">5. 如何优化包体积？</a></li><li><a href="#_6-hash-码是怎么生成的？如何避免hash重复的情况？">6. hash 码是怎么生成的？如何避免hash重复的情况？</a></li><li><a href="#_7-使用-import-时，node-modules-里的依赖会做什么">7. 使用 import 时，node_modules 里的依赖会做什么</a></li><li><a href="#_9-多个活动页，如何实现单独打包指定个活动？">9. 多个活动页，如何实现单独打包指定个活动？</a></li><li><a href="#_10-webpack一般怎么组织-css">10.  webpack一般怎么组织 CSS</a></li><li><a href="#_11-如何利用localstorage持久化缓存">11.  如何利用localstorage持久化缓存</a></li></ul></li><li><a href="#plugin">Plugin</a><ul><li><a href="#_1-plugin的实现原理">1. plugin的实现原理</a></li><li><a href="#_2-用过哪些常用plugin，解决什么问题">2. 用过哪些常用plugin，解决什么问题</a></li></ul></li><li><a href="#loader">Loader</a><ul><li><a href="#_1-loader的原理">1. loader的原理</a></li><li><a href="#_2-用过哪些常用loader，解决什么问题">2. 用过哪些常用loader，解决什么问题</a></li><li><a href="#_3-css-loader-和-style-loader-的区别">3. css-loader 和 style-loader 的区别</a></li><li><a href="#_4-file-loader-和-url-loader-的区别">4. file-loader 和 url-loader 的区别</a></li><li><a href="#_5-如何配-sass，需要配哪些-loader">5. 如何配 sass，需要配哪些 loader</a></li></ul></li></ul></div><p></p> <h2 id="实现原理"><a href="#实现原理" class="header-anchor">#</a> 实现原理</h2> <h3 id="_1-webpack-原理"><a href="#_1-webpack-原理" class="header-anchor">#</a> 1. webpack 原理</h3> <h3 id="_2-tree-shaking-的原理"><a href="#_2-tree-shaking-的原理" class="header-anchor">#</a> 2. tree-shaking 的原理</h3> <h3 id="_3-压缩、合并、打包实现的原理"><a href="#_3-压缩、合并、打包实现的原理" class="header-anchor">#</a> 3. 压缩、合并、打包实现的原理</h3> <h2 id="构建和生命周期"><a href="#构建和生命周期" class="header-anchor">#</a> 构建和生命周期</h2> <h3 id="_1-介绍下-webpack-的整个生命周期"><a href="#_1-介绍下-webpack-的整个生命周期" class="header-anchor">#</a> 1. 介绍下 Webpack 的整个生命周期</h3> <h3 id="_2-webpack-的构建流程"><a href="#_2-webpack-的构建流程" class="header-anchor">#</a> 2. webpack 的构建流程</h3> <h3 id="_3-webpack-如何做异步加载"><a href="#_3-webpack-如何做异步加载" class="header-anchor">#</a> 3. webpack 如何做异步加载</h3> <h2 id="横向对比"><a href="#横向对比" class="header-anchor">#</a> 横向对比</h2> <h3 id="_1-css-loader-和-style-loader-的对比"><a href="#_1-css-loader-和-style-loader-的对比" class="header-anchor">#</a> 1.css-loader 和 style-loader 的对比</h3> <h3 id="_2-webpack-与-gulp-的区别"><a href="#_2-webpack-与-gulp-的区别" class="header-anchor">#</a> 2. webpack 与 gulp 的区别</h3> <h3 id="_3-cjs和esm在-打包过程中的区别"><a href="#_3-cjs和esm在-打包过程中的区别" class="header-anchor">#</a> 3. cjs和esm在 打包过程中的区别</h3> <h3 id="_4-webpack-的-loader-和-plugin-的对比"><a href="#_4-webpack-的-loader-和-plugin-的对比" class="header-anchor">#</a> 4. webpack 的 loader 和 plugin 的对比</h3> <h2 id="编译-开发环境"><a href="#编译-开发环境" class="header-anchor">#</a> 编译&lt;开发环境&gt;</h2> <h3 id="_1-webpack-怎么处理内联-css-的"><a href="#_1-webpack-怎么处理内联-css-的" class="header-anchor">#</a> 1. webpack 怎么处理内联 css 的</h3> <h3 id="_2-dev-server-是怎么跑起来的"><a href="#_2-dev-server-是怎么跑起来的" class="header-anchor">#</a> 2. dev-server 是怎么跑起来的</h3> <h3 id="_3-webpack-热更新的原理"><a href="#_3-webpack-热更新的原理" class="header-anchor">#</a> 3. webpack 热更新的原理</h3> <h3 id="_4-热更新的优化方式"><a href="#_4-热更新的优化方式" class="header-anchor">#</a> 4. 热更新的优化方式</h3> <h3 id="_5-怎么配置开发环境的？"><a href="#_5-怎么配置开发环境的？" class="header-anchor">#</a> 5. 怎么配置开发环境的？</h3> <h2 id="打包-生产-测试环境"><a href="#打包-生产-测试环境" class="header-anchor">#</a> 打包&lt;生产/测试环境&gt;</h2> <h3 id="_1-webpack的分包策略"><a href="#_1-webpack的分包策略" class="header-anchor">#</a> 1. webpack的分包策略</h3> <h3 id="_2-webpack-怎么配置抽取公共文件"><a href="#_2-webpack-怎么配置抽取公共文件" class="header-anchor">#</a> 2. webpack 怎么配置抽取公共文件</h3> <h3 id="_3-如何配置把-js、css、html-单独打包成一个文件"><a href="#_3-如何配置把-js、css、html-单独打包成一个文件" class="header-anchor">#</a> 3.如何配置把 js、css、html 单独打包成一个文件</h3> <h3 id="_4-如何实现分模块打包（多入口）"><a href="#_4-如何实现分模块打包（多入口）" class="header-anchor">#</a> 4. 如何实现分模块打包（多入口）</h3> <h3 id="_5-如何优化包体积？"><a href="#_5-如何优化包体积？" class="header-anchor">#</a> 5. 如何优化包体积？</h3> <h3 id="_6-hash-码是怎么生成的？如何避免hash重复的情况？"><a href="#_6-hash-码是怎么生成的？如何避免hash重复的情况？" class="header-anchor">#</a> 6. hash 码是怎么生成的？如何避免hash重复的情况？</h3> <h3 id="_7-使用-import-时，node-modules-里的依赖会做什么"><a href="#_7-使用-import-时，node-modules-里的依赖会做什么" class="header-anchor">#</a> 7. 使用 import 时，node_modules 里的依赖会做什么</h3> <h3 id="_9-多个活动页，如何实现单独打包指定个活动？"><a href="#_9-多个活动页，如何实现单独打包指定个活动？" class="header-anchor">#</a> 9. 多个活动页，如何实现单独打包指定个活动？</h3> <h3 id="_10-webpack一般怎么组织-css"><a href="#_10-webpack一般怎么组织-css" class="header-anchor">#</a> 10.  webpack一般怎么组织 CSS</h3> <h3 id="_11-如何利用localstorage持久化缓存"><a href="#_11-如何利用localstorage持久化缓存" class="header-anchor">#</a> 11.  如何利用localstorage持久化缓存</h3> <h2 id="plugin"><a href="#plugin" class="header-anchor">#</a> Plugin</h2> <h3 id="_1-plugin的实现原理"><a href="#_1-plugin的实现原理" class="header-anchor">#</a> 1. plugin的实现原理</h3> <h3 id="_2-用过哪些常用plugin，解决什么问题"><a href="#_2-用过哪些常用plugin，解决什么问题" class="header-anchor">#</a> 2. 用过哪些常用plugin，解决什么问题</h3> <h4 id="_1-terser-webpack-plugin"><a href="#_1-terser-webpack-plugin" class="header-anchor">#</a> 1. terser-webpack-plugin</h4> <p>压缩JS文件，另外还有类似功能的<code>webpack-parallel-uglify-plugin</code>、<code>uglifyjs-webpack-plugin</code> <code>js optimization: { minimizer: [ new TerserPlugin({ parallel: true, cache: true }) ] }</code></p> <h4 id="_2-thread-loader"><a href="#_2-thread-loader" class="header-anchor">#</a> 2. thread-loader</h4> <p><strong>开启并行构建</strong>。由于happypack的作者说自己的兴趣已经不再js上了，所以已经没有维护了，并推荐使用的是webpack4.x+并且使用thread-loader。</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token punctuation">{</span>
+   test<span class="token operator">:</span> <span class="token regex">/\.js$/</span><span class="token punctuation">,</span>
+   use<span class="token operator">:</span> <span class="token punctuation">[</span>
+     <span class="token punctuation">{</span>
+       loader<span class="token operator">:</span> <span class="token string">&quot;thread-loader&quot;</span><span class="token punctuation">,</span>
+       options<span class="token operator">:</span> threadLoaderOptions
+     <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token string">&quot;babel-loader&quot;</span><span class="token punctuation">,</span>
+    <span class="token punctuation">]</span><span class="token punctuation">,</span>
+   exclude<span class="token operator">:</span> <span class="token regex">/node_modules/</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h4 id="_3-dllplugin"><a href="#_3-dllplugin" class="header-anchor">#</a> 3. DllPlugin</h4> <p>上面说的几个并行插件理论上是可以增加构建速度，网上很多文章都是这么说的，但是我在实际的过程中使用，发现有时候不仅没提升反而还降低了打包速度，网速查阅给的理由是可能你的电脑核数本来就低，或者当时你CPU运行已经很高了，再去开启多进程导致构建速度降低。</p> <p>上面说的几个并行插件可能在某些情况下达不到你想要的效果，然而在我们团队优化webpack性能经验来看，这次所说的两个插件是很明显并且每次都能提高打包速度的。原理就是先把第三方依赖先打包一次生成一个js文件，然后真正打包项目代码时候，会根据映射文件直接从打包出来的js文件获取所需要的对象，而不用再去打包第三方文件。只不过这种情况打包配置稍微麻烦点，需要写一个webpack.dll.js。大致如下：</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// webpack.dll.js</span>
+<span class="token keyword">const</span> path <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'path'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> webpack <span class="token operator">=</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">'webpack'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span>
+    entry<span class="token operator">:</span> <span class="token punctuation">{</span>
+        library<span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">&quot;vue&quot;</span><span class="token punctuation">,</span> <span class="token string">&quot;moment&quot;</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    output<span class="token operator">:</span> <span class="token punctuation">{</span>
+        filename<span class="token operator">:</span> <span class="token string">'[name].dll.js'</span><span class="token punctuation">,</span>
+        path<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'json-dll'</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+        library<span class="token operator">:</span> <span class="token string">'[name]'</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    plugins<span class="token operator">:</span> <span class="token punctuation">[</span>
+        <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DllPlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+            path<span class="token operator">:</span> <span class="token string">'./json-dll/library.json'</span><span class="token punctuation">,</span>
+            name<span class="token operator">:</span> <span class="token string">'[name].json'</span>
+        <span class="token punctuation">}</span><span class="token punctuation">)</span>
+    <span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token comment">// webpack.dev.js</span>
+  <span class="token keyword">new</span> <span class="token class-name">AddAssetHtmlWebpack</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+     filepath<span class="token operator">:</span> path<span class="token punctuation">.</span><span class="token function">resolve</span><span class="token punctuation">(</span>__dirname<span class="token punctuation">,</span> <span class="token string">'./json-dll/library.dll.js'</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+
+ <span class="token keyword">new</span> <span class="token class-name">webpack<span class="token punctuation">.</span>DllReferencePlugin</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+      manifest<span class="token operator">:</span> <span class="token function">require</span><span class="token punctuation">(</span><span class="token string">&quot;./json-dll/library.json&quot;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br></div></div><h4 id="_4-webpack-bundle-analyzer"><a href="#_4-webpack-bundle-analyzer" class="header-anchor">#</a> 4. webpack-bundle-analyzer</h4> <p>这个插件可以用可视化帮我们分析打包体积，从而来采用合适的优化方式去改进我们的webpack配置。</p> <h4 id="_5-speed-measure-webpack-plugin"><a href="#_5-speed-measure-webpack-plugin" class="header-anchor">#</a> 5. speed-measure-webpack-plugin</h4> <p>这个插件可以告诉我们打包时候每一个loader或者plugin花费了多少时间，从而对耗时比较长的plugin和loader做优化</p> <h4 id="_6-friendly-errors-webpack-plugin"><a href="#_6-friendly-errors-webpack-plugin" class="header-anchor">#</a> 6. friendly-errors-webpack-plugin</h4> <p>这个插件可以帮我们优化打包日志，我们打包时候经常看到很长一个日志信息，有的时候是不需要的，也不会去看所以可以用这个插件来简化。</p> <h2 id="loader"><a href="#loader" class="header-anchor">#</a> Loader</h2> <h3 id="_1-loader的原理"><a href="#_1-loader的原理" class="header-anchor">#</a> 1. loader的原理</h3> <h3 id="_2-用过哪些常用loader，解决什么问题"><a href="#_2-用过哪些常用loader，解决什么问题" class="header-anchor">#</a> 2. 用过哪些常用loader，解决什么问题</h3> <h4 id="_1-cache-loader"><a href="#_1-cache-loader" class="header-anchor">#</a> 1. cache-loader</h4> <p>这个loader就是在第一次打包的时候会缓存打包的结果，在第二次打包的时候就会直接读取缓存的内容，从而提高打包效率。但是也需要合理利用，我们要记住一点你加的每一个loader，plugins都会带来额外的打包时间。这个额外时间比他带来的减少时间多，那么一味的增加这个loader就没意义，所以cache-loader最好用在耗时比较大的loader上，配置如下</p> <h3 id="_3-css-loader-和-style-loader-的区别"><a href="#_3-css-loader-和-style-loader-的区别" class="header-anchor">#</a> 3. css-loader 和 style-loader 的区别</h3> <h3 id="_4-file-loader-和-url-loader-的区别"><a href="#_4-file-loader-和-url-loader-的区别" class="header-anchor">#</a> 4. file-loader 和 url-loader 的区别</h3> <h3 id="_5-如何配-sass，需要配哪些-loader"><a href="#_5-如何配-sass，需要配哪些-loader" class="header-anchor">#</a> 5. 如何配 sass，需要配哪些 loader</h3></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新时间:</span> <span class="time">11/7/2020, 10:20:49 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ad74b50b.js" defer></script><script src="/assets/js/2.2054c3ab.js" defer></script><script src="/assets/js/44.68a308ee.js" defer></script>
+  </body>
+</html>

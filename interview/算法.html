@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>算法 | vue-run</title>
+    <meta name="description" content="打造一个舒适的前端工作流">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.31620747.css" as="style"><link rel="preload" href="/assets/js/app.ad74b50b.js" as="script"><link rel="preload" href="/assets/js/2.2054c3ab.js" as="script"><link rel="preload" href="/assets/js/46.5441fd11.js" as="script"><link rel="prefetch" href="/assets/js/10.2fcb329f.js"><link rel="prefetch" href="/assets/js/11.aa231dd9.js"><link rel="prefetch" href="/assets/js/12.9f1fdf0e.js"><link rel="prefetch" href="/assets/js/13.d119215d.js"><link rel="prefetch" href="/assets/js/14.de9dfb60.js"><link rel="prefetch" href="/assets/js/15.15c1321a.js"><link rel="prefetch" href="/assets/js/16.d047a64e.js"><link rel="prefetch" href="/assets/js/17.fa9b699d.js"><link rel="prefetch" href="/assets/js/18.d4110752.js"><link rel="prefetch" href="/assets/js/19.e47e31ff.js"><link rel="prefetch" href="/assets/js/20.c21ff74b.js"><link rel="prefetch" href="/assets/js/21.403ef4cb.js"><link rel="prefetch" href="/assets/js/22.afbc471c.js"><link rel="prefetch" href="/assets/js/23.8fc68b7a.js"><link rel="prefetch" href="/assets/js/24.aaa61bbc.js"><link rel="prefetch" href="/assets/js/25.1546e7a8.js"><link rel="prefetch" href="/assets/js/26.d61179ba.js"><link rel="prefetch" href="/assets/js/27.357b1395.js"><link rel="prefetch" href="/assets/js/28.cc219ae3.js"><link rel="prefetch" href="/assets/js/29.b6955861.js"><link rel="prefetch" href="/assets/js/3.a4e279d6.js"><link rel="prefetch" href="/assets/js/30.043e4801.js"><link rel="prefetch" href="/assets/js/31.c1b8cf35.js"><link rel="prefetch" href="/assets/js/32.42958bd6.js"><link rel="prefetch" href="/assets/js/33.e126e05f.js"><link rel="prefetch" href="/assets/js/34.6864e25a.js"><link rel="prefetch" href="/assets/js/35.aeeec13a.js"><link rel="prefetch" href="/assets/js/36.a3946cf6.js"><link rel="prefetch" href="/assets/js/37.b4478e59.js"><link rel="prefetch" href="/assets/js/38.574146f4.js"><link rel="prefetch" href="/assets/js/39.3cd37280.js"><link rel="prefetch" href="/assets/js/4.c0861a31.js"><link rel="prefetch" href="/assets/js/40.c5a34540.js"><link rel="prefetch" href="/assets/js/41.7f323d85.js"><link rel="prefetch" href="/assets/js/42.d31181fa.js"><link rel="prefetch" href="/assets/js/43.6e0bf2e6.js"><link rel="prefetch" href="/assets/js/44.68a308ee.js"><link rel="prefetch" href="/assets/js/45.2ef9d7c8.js"><link rel="prefetch" href="/assets/js/47.fab1189a.js"><link rel="prefetch" href="/assets/js/48.ff364c5c.js"><link rel="prefetch" href="/assets/js/49.25efaf4d.js"><link rel="prefetch" href="/assets/js/5.a116802f.js"><link rel="prefetch" href="/assets/js/50.ec8ad626.js"><link rel="prefetch" href="/assets/js/51.d1f171f3.js"><link rel="prefetch" href="/assets/js/52.100e2510.js"><link rel="prefetch" href="/assets/js/53.f7e297ba.js"><link rel="prefetch" href="/assets/js/54.d0716ad6.js"><link rel="prefetch" href="/assets/js/55.6984554f.js"><link rel="prefetch" href="/assets/js/56.c9d4b98a.js"><link rel="prefetch" href="/assets/js/57.1736acb1.js"><link rel="prefetch" href="/assets/js/58.1e194851.js"><link rel="prefetch" href="/assets/js/59.cc8df9af.js"><link rel="prefetch" href="/assets/js/6.f95efe2a.js"><link rel="prefetch" href="/assets/js/60.6a846f1a.js"><link rel="prefetch" href="/assets/js/61.e0a08076.js"><link rel="prefetch" href="/assets/js/62.5b3128e3.js"><link rel="prefetch" href="/assets/js/63.d9c80c61.js"><link rel="prefetch" href="/assets/js/64.686b1cb0.js"><link rel="prefetch" href="/assets/js/65.ce207947.js"><link rel="prefetch" href="/assets/js/66.cea7a33b.js"><link rel="prefetch" href="/assets/js/67.6bf9f16e.js"><link rel="prefetch" href="/assets/js/68.c3755fba.js"><link rel="prefetch" href="/assets/js/69.1987d1f9.js"><link rel="prefetch" href="/assets/js/7.60e754f0.js"><link rel="prefetch" href="/assets/js/70.55bd8888.js"><link rel="prefetch" href="/assets/js/71.3f35de42.js"><link rel="prefetch" href="/assets/js/72.249f0def.js"><link rel="prefetch" href="/assets/js/73.e19ee3e7.js"><link rel="prefetch" href="/assets/js/8.d7e7dd67.js"><link rel="prefetch" href="/assets/js/9.b3d60b51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.31620747.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">vue-run</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav>  <!----> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="算法"><a href="#算法" class="header-anchor">#</a> 算法</h1> <p><img src="/assets/img/25.736166b7.png" alt="算法"></p><div class="table-of-contents"><ul><li><a href="#合并二维有序数组成一维有序数组，归并排序的思路">合并二维有序数组成一维有序数组，归并排序的思路</a></li><li><a href="#多种方式实现斐波那契数列">多种方式实现斐波那契数列</a></li><li><a href="#字符串出现的不重复最长长度">字符串出现的不重复最长长度</a></li><li><a href="#有一堆整数，请把他们分成三份，确保每一份和尽量相等（11，42，23，4，5，6-4-5-6-11-23-42-56-78-90）">有一堆整数，请把他们分成三份，确保每一份和尽量相等（11，42，23，4，5，6 4 5 6 11 23 42 56 78 90）</a></li><li><a href="#输入一条-polyline，输出-polyline-的中点">输入一条 polyline，输出 polyline 的中点</a></li><li><a href="#单向链表实现队列">单向链表实现队列</a></li><li><a href="#将给定的数组从顶级分类递归查找子分类，最终构建一个树状数组">将给定的数组从顶级分类递归查找子分类，最终构建一个树状数组</a></li><li><a href="#实现一个将-52-张牌随机均等的分给四个人，比如输入-0-1-2-3-51-，输出-1-2-16-4-3-6">实现一个将 52 张牌随机均等的分给四个人，比如输入 [0,1,2,3....51] ，输出[[1,2,16...],[4,3,6..],[....],[....]]</a></li><li><a href="#按要求实现-rightview-函数">按要求实现 rightView 函数</a></li><li><a href="#二叉树序列化反序列化">二叉树序列化反序列化</a></li><li><a href="#输入一个数字，找到对应的字母">输入一个数字，找到对应的字母</a></li><li><a href="#给一个字符串比如-abca-，返回第一个不重复的字母">给一个字符串比如'abca'，返回第一个不重复的字母</a></li><li><a href="#给定⼀个只包括-，-，-，-，-，-的字符串，判断字符串是否有效">给定⼀个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效.</a></li><li><a href="#手动实现一个函数，给定一个数组-1-0-2-3-4-1-3-，输出任意两个值和为-0-的下标">手动实现一个函数，给定一个数组[1,0,2,3,4,-1,-3]，输出任意两个值和为 0 的下标</a></li><li><a href="#介绍排序算法和快排原理">介绍排序算法和快排原理</a></li><li><a href="#一个人每次只能走一层楼梯或者两层楼梯，问走到第-80-层楼梯一共有多少种方法">一个人每次只能走一层楼梯或者两层楼梯，问走到第 80 层楼梯一共有多少种方法</a></li><li><a href="#给定一个数组，形如-1-1-2-3-3-3-3-4-6-6-，给定一个数-n，例如-3，找出给定的数-n-在数组内出现的次数，要求时间复杂度小于-o-n">给定一个数组，形如 [1, 1, 2 , 3, 3, 3, 3, 4, 6, 6]，给定一个数 n，例如 3，找出给定的数 n 在数组内出现的次数，要求时间复杂度小于 O(n)</a></li><li><a href="#现在有随机整数数组，例如-2-11-20-160-3-1-，请挑出数组内，三个随机整数和为-100-的所有数据。">现在有随机整数数组，例如[2,11,20,160,3,1...]，请挑出数组内，三个随机整数和为 100 的所有数据。</a></li><li><a href="#统计一组整形数组的最大差值？">统计一组整形数组的最大差值？</a></li><li><a href="#介绍冒泡排序、选择排序，说说冒泡排序如何优化">介绍冒泡排序、选择排序，说说冒泡排序如何优化</a></li><li><a href="#如何判断链表是否有环">如何判断链表是否有环</a></li><li><a href="#介绍二叉搜索树的特点">介绍二叉搜索树的特点</a></li><li><a href="#手写数组去重函数-至少三种以上，说明时间复杂度">手写数组去重函数(至少三种以上，说明时间复杂度)</a></li><li><a href="#找到前-k-个最大的元素">找到前 K 个最大的元素</a></li><li><a href="#介绍下-dfs-深度优先">介绍下 DFS 深度优先</a></li><li><a href="#递归公式的时间复杂度为？-单选题">递归公式的时间复杂度为？(单选题)</a></li><li><a href="#用-javascript-实现一个标准的排序算法-快排、冒泡、选择排序-，对某个数字数组进行由低到高的排序。">用 JavaScript 实现一个标准的排序算法(快排、冒泡、选择排序)，对某个数字数组进行由低到高的排序。</a></li><li><a href="#找出-aaaabbcccdddd-字符串中出现最多的字母？">找出“aaaabbcccdddd”字符串中出现最多的字母？</a></li><li><a href="#求-n-以内的所有素数，并说明时间复杂度">求 n 以内的所有素数，并说明时间复杂度</a></li><li><a href="#给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明-叶子节点是指没有子节点的节点">给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明: 叶子节点是指没有子节点的节点</a></li><li><a href="#给定一个整数数组-nums，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和">给定一个整数数组 nums，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和</a></li><li><a href="#根据传入参数-n-数字-对一维数组-纯数字-按照距离-n-最近的顺序排序。-距离即数字与-n-的差值的绝对值">根据传入参数 n(数字)对一维数组(纯数字)按照距离 n 最近的顺序排序。(距离即数字与 n 的差值的绝对值)</a></li><li><a href="#找出两个数组的交集元素">找出两个数组的交集元素</a></li><li><a href="#输入一个整数，输出该数二进制表示中-1-的个数">输入一个整数，输出该数二进制表示中 1 的个数</a></li><li><a href="#⽤-js-实现随机选取-10-100-之间的-10-个且不重复的数字，存⼊⼀个数组，还要排序">⽤ js 实现随机选取 10–100 之间的 10 个且不重复的数字，存⼊⼀个数组，还要排序</a></li><li><a href="#请用算法实现，从给定的无序、不重复的数组-data-中，取出-n-个数，使其相加和为-sum。并给出算法的时间-空间复杂度。-不需要找到所有的解，找到一个解即可">请用算法实现，从给定的无序、不重复的数组 data 中，取出 n 个数，使其相加和为 sum。并给出算法的时间/空间复杂度。(不需要找到所有的解，找到一个解即可)</a></li><li><a href="#给定⼀个⼤⼩为-n-的数组，找到其中的众数。众数是指在数组中出现次数⼤于-⌊⌊-n-2-⌋⌋-的元素">给定⼀个⼤⼩为 n 的数组，找到其中的众数。众数是指在数组中出现次数⼤于 ⌊⌊ n/2 ⌋⌋ 的元素</a></li></ul></div><p></p> <h2 id="合并二维有序数组成一维有序数组，归并排序的思路"><a href="#合并二维有序数组成一维有序数组，归并排序的思路" class="header-anchor">#</a> 合并二维有序数组成一维有序数组，归并排序的思路</h2> <h2 id="多种方式实现斐波那契数列"><a href="#多种方式实现斐波那契数列" class="header-anchor">#</a> 多种方式实现斐波那契数列</h2> <h2 id="字符串出现的不重复最长长度"><a href="#字符串出现的不重复最长长度" class="header-anchor">#</a> 字符串出现的不重复最长长度</h2> <h2 id="有一堆整数，请把他们分成三份，确保每一份和尽量相等（11，42，23，4，5，6-4-5-6-11-23-42-56-78-90）"><a href="#有一堆整数，请把他们分成三份，确保每一份和尽量相等（11，42，23，4，5，6-4-5-6-11-23-42-56-78-90）" class="header-anchor">#</a> 有一堆整数，请把他们分成三份，确保每一份和尽量相等（11，42，23，4，5，6 4 5 6 11 23 42 56 78 90）</h2> <h2 id="输入一条-polyline，输出-polyline-的中点"><a href="#输入一条-polyline，输出-polyline-的中点" class="header-anchor">#</a> 输入一条 polyline，输出 polyline 的中点</h2> <blockquote><p>算法：输入一条 polyline，输出 polyline 的中点
+绘制：在浏览器中绘制出 polyline 和中点
+说明：中点是指沿着 polyline，到 polyline 的起点和终点，距离相等，中点要求在 polyline 上
+输入：[[10, 20], [20, 200], [30, 220], [40, 300], [100, 400]]，以[10, 20]举例，10 代表 x 坐标，20 代表 y 坐标，单位是像素
+要求：提供源代码，用原生 JavaScript 实现，不使用任何框架、类库、构建工具，本地打开 html 文件可直接看到效果</p></blockquote> <h2 id="单向链表实现队列"><a href="#单向链表实现队列" class="header-anchor">#</a> 单向链表实现队列</h2> <h2 id="将给定的数组从顶级分类递归查找子分类，最终构建一个树状数组"><a href="#将给定的数组从顶级分类递归查找子分类，最终构建一个树状数组" class="header-anchor">#</a> 将给定的数组从顶级分类递归查找子分类，最终构建一个树状数组</h2> <blockquote><p>数组：[{id:1, parentId: 0}, {id:2, parentId:1},{id:3, parentId:1}]
+输出结果：[{id:1, parentId: 0,children:[{id:2, parentId:1},{id:3, parentId:1}]}]
+说明：parentId 为 0 的是根节点</p></blockquote> <h2 id="实现一个将-52-张牌随机均等的分给四个人，比如输入-0-1-2-3-51-，输出-1-2-16-4-3-6"><a href="#实现一个将-52-张牌随机均等的分给四个人，比如输入-0-1-2-3-51-，输出-1-2-16-4-3-6" class="header-anchor">#</a> 实现一个将 52 张牌随机均等的分给四个人，比如输入 [0,1,2,3....51] ，输出[[1,2,16...],[4,3,6..],[....],[....]]</h2> <h2 id="按要求实现-rightview-函数"><a href="#按要求实现-rightview-函数" class="header-anchor">#</a> 按要求实现 rightView 函数</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">TreeNode</span><span class="token punctuation">(</span><span class="token parameter">val</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>val <span class="token operator">=</span> val<span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>left <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token keyword">this</span><span class="token punctuation">.</span>right <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">function</span> <span class="token function">rightView</span><span class="token punctuation">(</span><span class="token parameter">root</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+  <span class="token comment">// 请你实现</span>
+<span class="token punctuation">}</span>
+<span class="token comment">// =&gt; [1,4,3]</span>
+     <span class="token number">1</span>      <span class="token operator">=&gt;</span> <span class="token number">1</span>
+   <span class="token number">2</span>   <span class="token number">4</span>    <span class="token operator">=&gt;</span> <span class="token number">4</span>
+ <span class="token number">7</span>   <span class="token number">3</span>      <span class="token operator">=&gt;</span> <span class="token number">3</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><h2 id="二叉树序列化反序列化"><a href="#二叉树序列化反序列化" class="header-anchor">#</a> 二叉树序列化反序列化</h2> <h2 id="输入一个数字，找到对应的字母"><a href="#输入一个数字，找到对应的字母" class="header-anchor">#</a> 输入一个数字，找到对应的字母</h2> <blockquote><div class="language- extra-class"><pre><code>如输入1 返回a
+</code></pre></div></blockquote> <div class="language- extra-class"><pre><code>输入26返回z
+输入27返回aa
+输入28返回ab
+输入53返回aaa
+</code></pre></div><h2 id="给一个字符串比如-abca-，返回第一个不重复的字母"><a href="#给一个字符串比如-abca-，返回第一个不重复的字母" class="header-anchor">#</a> 给一个字符串比如'abca'，返回第一个不重复的字母</h2> <h2 id="给定⼀个只包括-，-，-，-，-，-的字符串，判断字符串是否有效"><a href="#给定⼀个只包括-，-，-，-，-，-的字符串，判断字符串是否有效" class="header-anchor">#</a> 给定⼀个只包括 '('，')'，'{'，'}'，'['，']' 的字符串，判断字符串是否有效.</h2> <blockquote><p>有效字符串需满⾜： 1. 左括号必须⽤相同类型的右括号闭合。 2. 左括号必须以正确的顺序闭合。
+注意空字符串可被认为是有效字符串。
+示例 1：
+输⼊: &quot;()&quot;
+输出: true
+示例 2：
+输⼊: &quot;()[]{}&quot;
+输出: true
+示例 3:
+输⼊: &quot;(]&quot;
+输出: false
+示例 4:
+输⼊: &quot;([)]&quot;
+输出: false
+示例 5:
+输⼊: &quot;{[]}&quot;
+输出: true</p></blockquote> <h2 id="手动实现一个函数，给定一个数组-1-0-2-3-4-1-3-，输出任意两个值和为-0-的下标"><a href="#手动实现一个函数，给定一个数组-1-0-2-3-4-1-3-，输出任意两个值和为-0-的下标" class="header-anchor">#</a> 手动实现一个函数，给定一个数组[1,0,2,3,4,-1,-3]，输出任意两个值和为 0 的下标</h2> <h2 id="介绍排序算法和快排原理"><a href="#介绍排序算法和快排原理" class="header-anchor">#</a> 介绍排序算法和快排原理</h2> <h2 id="一个人每次只能走一层楼梯或者两层楼梯，问走到第-80-层楼梯一共有多少种方法"><a href="#一个人每次只能走一层楼梯或者两层楼梯，问走到第-80-层楼梯一共有多少种方法" class="header-anchor">#</a> 一个人每次只能走一层楼梯或者两层楼梯，问走到第 80 层楼梯一共有多少种方法</h2> <h2 id="给定一个数组，形如-1-1-2-3-3-3-3-4-6-6-，给定一个数-n，例如-3，找出给定的数-n-在数组内出现的次数，要求时间复杂度小于-o-n"><a href="#给定一个数组，形如-1-1-2-3-3-3-3-4-6-6-，给定一个数-n，例如-3，找出给定的数-n-在数组内出现的次数，要求时间复杂度小于-o-n" class="header-anchor">#</a> 给定一个数组，形如 [1, 1, 2 , 3, 3, 3, 3, 4, 6, 6]，给定一个数 n，例如 3，找出给定的数 n 在数组内出现的次数，要求时间复杂度小于 O(n)</h2> <h2 id="现在有随机整数数组，例如-2-11-20-160-3-1-，请挑出数组内，三个随机整数和为-100-的所有数据。"><a href="#现在有随机整数数组，例如-2-11-20-160-3-1-，请挑出数组内，三个随机整数和为-100-的所有数据。" class="header-anchor">#</a> 现在有随机整数数组，例如[2,11,20,160,3,1...]，请挑出数组内，三个随机整数和为 100 的所有数据。</h2> <h2 id="统计一组整形数组的最大差值？"><a href="#统计一组整形数组的最大差值？" class="header-anchor">#</a> 统计一组整形数组的最大差值？</h2> <h2 id="介绍冒泡排序、选择排序，说说冒泡排序如何优化"><a href="#介绍冒泡排序、选择排序，说说冒泡排序如何优化" class="header-anchor">#</a> 介绍冒泡排序、选择排序，说说冒泡排序如何优化</h2> <h2 id="如何判断链表是否有环"><a href="#如何判断链表是否有环" class="header-anchor">#</a> 如何判断链表是否有环</h2> <h2 id="介绍二叉搜索树的特点"><a href="#介绍二叉搜索树的特点" class="header-anchor">#</a> 介绍二叉搜索树的特点</h2> <h2 id="手写数组去重函数-至少三种以上，说明时间复杂度"><a href="#手写数组去重函数-至少三种以上，说明时间复杂度" class="header-anchor">#</a> 手写数组去重函数(至少三种以上，说明时间复杂度)</h2> <h2 id="找到前-k-个最大的元素"><a href="#找到前-k-个最大的元素" class="header-anchor">#</a> 找到前 K 个最大的元素</h2> <h2 id="介绍下-dfs-深度优先"><a href="#介绍下-dfs-深度优先" class="header-anchor">#</a> 介绍下 DFS 深度优先</h2> <h2 id="递归公式的时间复杂度为？-单选题"><a href="#递归公式的时间复杂度为？-单选题" class="header-anchor">#</a> 递归公式的时间复杂度为？(单选题)</h2> <blockquote><p>A.O(n)
+B.O(logn)
+C.O(nlogn)
+D.O(n2)</p></blockquote> <h2 id="用-javascript-实现一个标准的排序算法-快排、冒泡、选择排序-，对某个数字数组进行由低到高的排序。"><a href="#用-javascript-实现一个标准的排序算法-快排、冒泡、选择排序-，对某个数字数组进行由低到高的排序。" class="header-anchor">#</a> 用 JavaScript 实现一个标准的排序算法(快排、冒泡、选择排序)，对某个数字数组进行由低到高的排序。</h2> <h2 id="找出-aaaabbcccdddd-字符串中出现最多的字母？"><a href="#找出-aaaabbcccdddd-字符串中出现最多的字母？" class="header-anchor">#</a> 找出“aaaabbcccdddd”字符串中出现最多的字母？</h2> <h2 id="求-n-以内的所有素数，并说明时间复杂度"><a href="#求-n-以内的所有素数，并说明时间复杂度" class="header-anchor">#</a> 求 n 以内的所有素数，并说明时间复杂度</h2> <h2 id="给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明-叶子节点是指没有子节点的节点"><a href="#给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明-叶子节点是指没有子节点的节点" class="header-anchor">#</a> 给定一个二叉树，找出其最大深度。二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。说明: 叶子节点是指没有子节点的节点</h2> <h2 id="给定一个整数数组-nums，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和"><a href="#给定一个整数数组-nums，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和" class="header-anchor">#</a> 给定一个整数数组 nums，找到一个具有最大和的连续子数组（子数组最少包含一个元素），返回其最大和</h2> <h2 id="根据传入参数-n-数字-对一维数组-纯数字-按照距离-n-最近的顺序排序。-距离即数字与-n-的差值的绝对值"><a href="#根据传入参数-n-数字-对一维数组-纯数字-按照距离-n-最近的顺序排序。-距离即数字与-n-的差值的绝对值" class="header-anchor">#</a> 根据传入参数 n(数字)对一维数组(纯数字)按照距离 n 最近的顺序排序。(距离即数字与 n 的差值的绝对值)</h2> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">var</span> arr <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">]</span>
+<span class="token keyword">function</span> <span class="token function">sort</span><span class="token punctuation">(</span><span class="token parameter">n</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment">// your code</span>
+<span class="token punctuation">}</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h2 id="找出两个数组的交集元素"><a href="#找出两个数组的交集元素" class="header-anchor">#</a> 找出两个数组的交集元素</h2> <h2 id="输入一个整数，输出该数二进制表示中-1-的个数"><a href="#输入一个整数，输出该数二进制表示中-1-的个数" class="header-anchor">#</a> 输入一个整数，输出该数二进制表示中 1 的个数</h2> <h2 id="⽤-js-实现随机选取-10-100-之间的-10-个且不重复的数字，存⼊⼀个数组，还要排序"><a href="#⽤-js-实现随机选取-10-100-之间的-10-个且不重复的数字，存⼊⼀个数组，还要排序" class="header-anchor">#</a> ⽤ js 实现随机选取 10–100 之间的 10 个且不重复的数字，存⼊⼀个数组，还要排序</h2> <h2 id="请用算法实现，从给定的无序、不重复的数组-data-中，取出-n-个数，使其相加和为-sum。并给出算法的时间-空间复杂度。-不需要找到所有的解，找到一个解即可"><a href="#请用算法实现，从给定的无序、不重复的数组-data-中，取出-n-个数，使其相加和为-sum。并给出算法的时间-空间复杂度。-不需要找到所有的解，找到一个解即可" class="header-anchor">#</a> 请用算法实现，从给定的无序、不重复的数组 data 中，取出 n 个数，使其相加和为 sum。并给出算法的时间/空间复杂度。(不需要找到所有的解，找到一个解即可)</h2> <h2 id="给定⼀个⼤⼩为-n-的数组，找到其中的众数。众数是指在数组中出现次数⼤于-⌊⌊-n-2-⌋⌋-的元素"><a href="#给定⼀个⼤⼩为-n-的数组，找到其中的众数。众数是指在数组中出现次数⼤于-⌊⌊-n-2-⌋⌋-的元素" class="header-anchor">#</a> 给定⼀个⼤⼩为 n 的数组，找到其中的众数。众数是指在数组中出现次数⼤于 ⌊⌊ n/2 ⌋⌋ 的元素</h2></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新时间:</span> <span class="time">11/7/2020, 9:48:41 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ad74b50b.js" defer></script><script src="/assets/js/2.2054c3ab.js" defer></script><script src="/assets/js/46.5441fd11.js" defer></script>
+  </body>
+</html>

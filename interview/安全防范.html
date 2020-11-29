@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>安全防范 | vue-run</title>
+    <meta name="description" content="打造一个舒适的前端工作流">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.31620747.css" as="style"><link rel="preload" href="/assets/js/app.ad74b50b.js" as="script"><link rel="preload" href="/assets/js/2.2054c3ab.js" as="script"><link rel="preload" href="/assets/js/13.d119215d.js" as="script"><link rel="prefetch" href="/assets/js/10.2fcb329f.js"><link rel="prefetch" href="/assets/js/11.aa231dd9.js"><link rel="prefetch" href="/assets/js/12.9f1fdf0e.js"><link rel="prefetch" href="/assets/js/14.de9dfb60.js"><link rel="prefetch" href="/assets/js/15.15c1321a.js"><link rel="prefetch" href="/assets/js/16.d047a64e.js"><link rel="prefetch" href="/assets/js/17.fa9b699d.js"><link rel="prefetch" href="/assets/js/18.d4110752.js"><link rel="prefetch" href="/assets/js/19.e47e31ff.js"><link rel="prefetch" href="/assets/js/20.c21ff74b.js"><link rel="prefetch" href="/assets/js/21.403ef4cb.js"><link rel="prefetch" href="/assets/js/22.afbc471c.js"><link rel="prefetch" href="/assets/js/23.8fc68b7a.js"><link rel="prefetch" href="/assets/js/24.aaa61bbc.js"><link rel="prefetch" href="/assets/js/25.1546e7a8.js"><link rel="prefetch" href="/assets/js/26.d61179ba.js"><link rel="prefetch" href="/assets/js/27.357b1395.js"><link rel="prefetch" href="/assets/js/28.cc219ae3.js"><link rel="prefetch" href="/assets/js/29.b6955861.js"><link rel="prefetch" href="/assets/js/3.a4e279d6.js"><link rel="prefetch" href="/assets/js/30.043e4801.js"><link rel="prefetch" href="/assets/js/31.c1b8cf35.js"><link rel="prefetch" href="/assets/js/32.42958bd6.js"><link rel="prefetch" href="/assets/js/33.e126e05f.js"><link rel="prefetch" href="/assets/js/34.6864e25a.js"><link rel="prefetch" href="/assets/js/35.aeeec13a.js"><link rel="prefetch" href="/assets/js/36.a3946cf6.js"><link rel="prefetch" href="/assets/js/37.b4478e59.js"><link rel="prefetch" href="/assets/js/38.574146f4.js"><link rel="prefetch" href="/assets/js/39.3cd37280.js"><link rel="prefetch" href="/assets/js/4.c0861a31.js"><link rel="prefetch" href="/assets/js/40.c5a34540.js"><link rel="prefetch" href="/assets/js/41.7f323d85.js"><link rel="prefetch" href="/assets/js/42.d31181fa.js"><link rel="prefetch" href="/assets/js/43.6e0bf2e6.js"><link rel="prefetch" href="/assets/js/44.68a308ee.js"><link rel="prefetch" href="/assets/js/45.2ef9d7c8.js"><link rel="prefetch" href="/assets/js/46.5441fd11.js"><link rel="prefetch" href="/assets/js/47.fab1189a.js"><link rel="prefetch" href="/assets/js/48.ff364c5c.js"><link rel="prefetch" href="/assets/js/49.25efaf4d.js"><link rel="prefetch" href="/assets/js/5.a116802f.js"><link rel="prefetch" href="/assets/js/50.ec8ad626.js"><link rel="prefetch" href="/assets/js/51.d1f171f3.js"><link rel="prefetch" href="/assets/js/52.100e2510.js"><link rel="prefetch" href="/assets/js/53.f7e297ba.js"><link rel="prefetch" href="/assets/js/54.d0716ad6.js"><link rel="prefetch" href="/assets/js/55.6984554f.js"><link rel="prefetch" href="/assets/js/56.c9d4b98a.js"><link rel="prefetch" href="/assets/js/57.1736acb1.js"><link rel="prefetch" href="/assets/js/58.1e194851.js"><link rel="prefetch" href="/assets/js/59.cc8df9af.js"><link rel="prefetch" href="/assets/js/6.f95efe2a.js"><link rel="prefetch" href="/assets/js/60.6a846f1a.js"><link rel="prefetch" href="/assets/js/61.e0a08076.js"><link rel="prefetch" href="/assets/js/62.5b3128e3.js"><link rel="prefetch" href="/assets/js/63.d9c80c61.js"><link rel="prefetch" href="/assets/js/64.686b1cb0.js"><link rel="prefetch" href="/assets/js/65.ce207947.js"><link rel="prefetch" href="/assets/js/66.cea7a33b.js"><link rel="prefetch" href="/assets/js/67.6bf9f16e.js"><link rel="prefetch" href="/assets/js/68.c3755fba.js"><link rel="prefetch" href="/assets/js/69.1987d1f9.js"><link rel="prefetch" href="/assets/js/7.60e754f0.js"><link rel="prefetch" href="/assets/js/70.55bd8888.js"><link rel="prefetch" href="/assets/js/71.3f35de42.js"><link rel="prefetch" href="/assets/js/72.249f0def.js"><link rel="prefetch" href="/assets/js/73.e19ee3e7.js"><link rel="prefetch" href="/assets/js/8.d7e7dd67.js"><link rel="prefetch" href="/assets/js/9.b3d60b51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.31620747.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">vue-run</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>安全防范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#xss-跨域脚本攻击" class="sidebar-link">XSS 跨域脚本攻击</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#反射性-xss" class="sidebar-link">反射性 XSS</a></li><li class="sidebar-sub-header"><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#存储型攻击" class="sidebar-link">存储型攻击</a></li><li class="sidebar-sub-header"><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#dom-型攻击" class="sidebar-link">DOM 型攻击</a></li><li class="sidebar-sub-header"><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#xss-防御" class="sidebar-link">XSS 防御</a></li></ul></li><li><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#csp-内容安全策略" class="sidebar-link">CSP 内容安全策略</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#csrf-跨域请求伪造" class="sidebar-link">CSRF 跨域请求伪造</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#csrf-防御" class="sidebar-link">CSRF 防御</a></li></ul></li><li><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#点击劫持" class="sidebar-link">点击劫持</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#防御手段" class="sidebar-link">防御手段</a></li></ul></li><li><a href="/interview/%E5%AE%89%E5%85%A8%E9%98%B2%E8%8C%83.html#中间人攻击" class="sidebar-link">中间人攻击</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="安全防范"><a href="#安全防范" class="header-anchor">#</a> 安全防范</h1> <p></p><div class="table-of-contents"><ul><li><a href="#xss-跨域脚本攻击">XSS 跨域脚本攻击</a><ul><li><a href="#反射性-xss">反射性 XSS</a></li><li><a href="#存储型攻击">存储型攻击</a></li><li><a href="#dom-型攻击">DOM 型攻击</a></li><li><a href="#xss-防御">XSS 防御</a></li></ul></li><li><a href="#csp-内容安全策略">CSP 内容安全策略</a></li><li><a href="#csrf-跨域请求伪造">CSRF 跨域请求伪造</a><ul><li><a href="#csrf-防御">CSRF 防御</a></li></ul></li><li><a href="#点击劫持">点击劫持</a><ul><li><a href="#防御手段">防御手段</a></li></ul></li><li><a href="#中间人攻击">中间人攻击</a></li></ul></div><p></p> <h2 id="xss-跨域脚本攻击"><a href="#xss-跨域脚本攻击" class="header-anchor">#</a> XSS 跨域脚本攻击</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>XSS 攻击简单来说就是攻击者想尽一切办法把可执行的代码嵌入到页面中，以达到非法窃取某些数据或者破坏的目的。</p></div> <p>依据情景的不同，XSS 攻击可分为几种类型。</p> <h3 id="反射性-xss"><a href="#反射性-xss" class="header-anchor">#</a> 反射性 XSS</h3> <p>反射性 XSS 也叫做非持久性 XSS，是指发生请求时，XSS 代码会出现在请求的 URL 中，作为参数提交到服务器，服务器接受并响应。响应结果中包含 XSS 代码，最后通过浏览器进行解析并执行，一个反射性 XSS 可能如下所示</p> <div class="language-js line-numbers-mode"><pre class="language-js"><code><span class="token keyword">function</span> <span class="token function">ajax</span><span class="token punctuation">(</span><span class="token parameter">url</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token keyword">new</span> <span class="token class-name">Promise</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token parameter">resolve<span class="token punctuation">,</span> reject</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token function">setTimeout</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+      <span class="token function">resolve</span><span class="token punctuation">(</span>url<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'?'</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token number">1500</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+<span class="token keyword">var</span> url <span class="token operator">=</span> <span class="token string">'https://www.baidu.com/getUserInfo?name=&lt;script&gt;alert(document.cookie)&lt;/script&gt;'</span>
+<span class="token function">ajax</span><span class="token punctuation">(</span>url<span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">data</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  document<span class="token punctuation">.</span>body<span class="token punctuation">.</span><span class="token function">insertAdjacentHTML</span><span class="token punctuation">(</span><span class="token string">'beforeend'</span><span class="token punctuation">,</span> data<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">'='</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span>
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="存储型攻击"><a href="#存储型攻击" class="header-anchor">#</a> 存储型攻击</h3> <p>存储型 XSS 也叫<code>持久性 XSS</code>，它的主要攻击方式是将代码发送到服务器，最常见的存储型 XSS 攻击就是评论或者浏览攻击，一个存储型 XSS 可能如下图所示：</p> <p><img src="/assets/img/12.5c4e51ca.png" alt="储存性XSS攻击"></p> <h3 id="dom-型攻击"><a href="#dom-型攻击" class="header-anchor">#</a> DOM 型攻击</h3> <p>将攻击脚本写在 URL 中，诱导用户点击该 URL，如果 URL 被解析，那么攻击脚本就会被运行。和前两者的差别主要在于 DOM 型攻击不经过服务端</p> <h3 id="xss-防御"><a href="#xss-防御" class="header-anchor">#</a> XSS 防御</h3> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <ol><li><strong>输入检查</strong>：将由用户输入的内容，进行必要的标签例如<code>&lt;script&gt;</code>、<code>&lt;iframe&gt;</code>转义，包括<code>&lt;</code>、<code>&gt;</code>、<code>/</code>等, 另外过滤一些危险属性或者方法，例如<code>onerror</code>方法、<code>href</code>属性、<code>src</code>属性等</li> <li><strong>设置 httpOnly</strong>：在服务端设置<code>cookit</code>属性<code>httpOnly</code>防止客户端通过<code>document.cookie</code>读取</li> <li><strong>开启 CSP</strong>：即开启白名单，可阻止白名单以外的资源加载和运行</li></ol></div> <h2 id="csp-内容安全策略"><a href="#csp-内容安全策略" class="header-anchor">#</a> CSP 内容安全策略</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>CSP 内容安全策略本质上来说是建立白名单机制，告诉浏览器哪些外部资源可以加载和执行，我们只需要配置，拦截主要交给浏览器。</p></div> <p>通常有两种方法设置 CSP：</p> <ol><li>通过设置<code>HTTP Header</code>的<code>Content-Security-Policy</code></li> <li>通过<code>meta</code>标签来设置，例如：<code>&lt;meta http-equiv=&quot;Content-Security-Policy&quot;&gt;</code></li></ol> <h2 id="csrf-跨域请求伪造"><a href="#csrf-跨域请求伪造" class="header-anchor">#</a> CSRF 跨域请求伪造</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>CSRF 攻击原理上是攻击者伪造一个后端请求地址，诱导用户进行点击，如果用户在已登录的情况下点击了这个危险链接，则后端服务器会认为是用户在正常访问，攻击者从而可以从请求中拿到一些信息，进而进行攻击。</p></div> <h3 id="csrf-防御"><a href="#csrf-防御" class="header-anchor">#</a> CSRF 防御</h3> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>CSRF 防御有如下几种方式：</p> <ol><li><code>Get</code>请求不对数据进行修改</li> <li><strong>设置 SameSite</strong>：不让第三方网站访问用户的<code>Cookie</code>，可以通过<code>Cookie</code>的<code>SameSite</code>属性</li> <li><strong>验证 Token</strong>：在进行请求时，附加<code>refer</code>验证和<code>token</code>验证</li> <li><strong>验证 Referer</strong>：通过验证请求头的 Referer 来验证来源站点，但请求头很容易伪造</li> <li><strong>阻止第三方网站请求</strong></li></ol></div> <h2 id="点击劫持"><a href="#点击劫持" class="header-anchor">#</a> 点击劫持</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>点击劫持是一种视觉欺骗的攻击手段。攻击者将需要攻击的网站通过 iframe 嵌套的方式嵌入自己的网页中，并将 iframe 设置为透明，在页面中透出一个按钮诱导用户点击。</p></div> <h3 id="防御手段"><a href="#防御手段" class="header-anchor">#</a> 防御手段</h3> <p>设置 HTTP 响应头<code>X-FRAME-OPTIONS</code>，它可以设置<code>DENY</code>、<code>SAMEORIGIN</code>、<code>ALLOW-FROM</code>分别表示不允许<code>iframe</code>展示、只允许永远<code>iframe</code>展示、表示页面可以在指定来源的<code>iframe</code>中展示。</p> <h2 id="中间人攻击"><a href="#中间人攻击" class="header-anchor">#</a> 中间人攻击</h2> <div class="custom-block tip"><p class="custom-block-title">TIP</p> <p>中间人攻击是攻击方同时与服务端和客户端建立起了连接，并让对方认为连接是安全的，但是实际上整个通信过程都被攻击者控制了。攻击者不仅能获得双方的通信信息，还能修改通信信息。一般来说使用<code>HTTPS</code>协议可以有效防止中间人攻击，但并不是说<code>HTTPS</code>就可以高枕无忧，因为攻击者可以通过某种方式从<code>HTTPS</code>降级到<code>HTTP</code>进行访问。</p></div> <p><img src="/assets/img/13.d8ae3b54.jpg" alt="中间人攻击"></p></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新时间:</span> <span class="time">11/7/2020, 9:48:41 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ad74b50b.js" defer></script><script src="/assets/js/2.2054c3ab.js" defer></script><script src="/assets/js/13.d119215d.js" defer></script>
+  </body>
+</html>

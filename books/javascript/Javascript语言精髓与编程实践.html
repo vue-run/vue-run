@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>JavaScript 语言精髓与编程实践 | vue-run</title>
+    <meta name="description" content="打造一个舒适的前端工作流">
+    <meta name="generator" content="VuePress 1.4.0">
+    <link rel="shortcut icon" type="image/x-icon" href="./favicon.ico">
+  <link rel="icon" href="/logo.png">
+    
+    <link rel="preload" href="/assets/css/0.styles.31620747.css" as="style"><link rel="preload" href="/assets/js/app.ad74b50b.js" as="script"><link rel="preload" href="/assets/js/2.2054c3ab.js" as="script"><link rel="preload" href="/assets/js/25.1546e7a8.js" as="script"><link rel="prefetch" href="/assets/js/10.2fcb329f.js"><link rel="prefetch" href="/assets/js/11.aa231dd9.js"><link rel="prefetch" href="/assets/js/12.9f1fdf0e.js"><link rel="prefetch" href="/assets/js/13.d119215d.js"><link rel="prefetch" href="/assets/js/14.de9dfb60.js"><link rel="prefetch" href="/assets/js/15.15c1321a.js"><link rel="prefetch" href="/assets/js/16.d047a64e.js"><link rel="prefetch" href="/assets/js/17.fa9b699d.js"><link rel="prefetch" href="/assets/js/18.d4110752.js"><link rel="prefetch" href="/assets/js/19.e47e31ff.js"><link rel="prefetch" href="/assets/js/20.c21ff74b.js"><link rel="prefetch" href="/assets/js/21.403ef4cb.js"><link rel="prefetch" href="/assets/js/22.afbc471c.js"><link rel="prefetch" href="/assets/js/23.8fc68b7a.js"><link rel="prefetch" href="/assets/js/24.aaa61bbc.js"><link rel="prefetch" href="/assets/js/26.d61179ba.js"><link rel="prefetch" href="/assets/js/27.357b1395.js"><link rel="prefetch" href="/assets/js/28.cc219ae3.js"><link rel="prefetch" href="/assets/js/29.b6955861.js"><link rel="prefetch" href="/assets/js/3.a4e279d6.js"><link rel="prefetch" href="/assets/js/30.043e4801.js"><link rel="prefetch" href="/assets/js/31.c1b8cf35.js"><link rel="prefetch" href="/assets/js/32.42958bd6.js"><link rel="prefetch" href="/assets/js/33.e126e05f.js"><link rel="prefetch" href="/assets/js/34.6864e25a.js"><link rel="prefetch" href="/assets/js/35.aeeec13a.js"><link rel="prefetch" href="/assets/js/36.a3946cf6.js"><link rel="prefetch" href="/assets/js/37.b4478e59.js"><link rel="prefetch" href="/assets/js/38.574146f4.js"><link rel="prefetch" href="/assets/js/39.3cd37280.js"><link rel="prefetch" href="/assets/js/4.c0861a31.js"><link rel="prefetch" href="/assets/js/40.c5a34540.js"><link rel="prefetch" href="/assets/js/41.7f323d85.js"><link rel="prefetch" href="/assets/js/42.d31181fa.js"><link rel="prefetch" href="/assets/js/43.6e0bf2e6.js"><link rel="prefetch" href="/assets/js/44.68a308ee.js"><link rel="prefetch" href="/assets/js/45.2ef9d7c8.js"><link rel="prefetch" href="/assets/js/46.5441fd11.js"><link rel="prefetch" href="/assets/js/47.fab1189a.js"><link rel="prefetch" href="/assets/js/48.ff364c5c.js"><link rel="prefetch" href="/assets/js/49.25efaf4d.js"><link rel="prefetch" href="/assets/js/5.a116802f.js"><link rel="prefetch" href="/assets/js/50.ec8ad626.js"><link rel="prefetch" href="/assets/js/51.d1f171f3.js"><link rel="prefetch" href="/assets/js/52.100e2510.js"><link rel="prefetch" href="/assets/js/53.f7e297ba.js"><link rel="prefetch" href="/assets/js/54.d0716ad6.js"><link rel="prefetch" href="/assets/js/55.6984554f.js"><link rel="prefetch" href="/assets/js/56.c9d4b98a.js"><link rel="prefetch" href="/assets/js/57.1736acb1.js"><link rel="prefetch" href="/assets/js/58.1e194851.js"><link rel="prefetch" href="/assets/js/59.cc8df9af.js"><link rel="prefetch" href="/assets/js/6.f95efe2a.js"><link rel="prefetch" href="/assets/js/60.6a846f1a.js"><link rel="prefetch" href="/assets/js/61.e0a08076.js"><link rel="prefetch" href="/assets/js/62.5b3128e3.js"><link rel="prefetch" href="/assets/js/63.d9c80c61.js"><link rel="prefetch" href="/assets/js/64.686b1cb0.js"><link rel="prefetch" href="/assets/js/65.ce207947.js"><link rel="prefetch" href="/assets/js/66.cea7a33b.js"><link rel="prefetch" href="/assets/js/67.6bf9f16e.js"><link rel="prefetch" href="/assets/js/68.c3755fba.js"><link rel="prefetch" href="/assets/js/69.1987d1f9.js"><link rel="prefetch" href="/assets/js/7.60e754f0.js"><link rel="prefetch" href="/assets/js/70.55bd8888.js"><link rel="prefetch" href="/assets/js/71.3f35de42.js"><link rel="prefetch" href="/assets/js/72.249f0def.js"><link rel="prefetch" href="/assets/js/73.e19ee3e7.js"><link rel="prefetch" href="/assets/js/8.d7e7dd67.js"><link rel="prefetch" href="/assets/js/9.b3d60b51.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.31620747.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">vue-run</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/" class="nav-link">
+  指南
+</a></div><div class="nav-item"><a href="/config/" class="nav-link">
+  推荐配置
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="读书笔记" class="dropdown-title"><span class="title">读书笔记</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          Javascript书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/javascript/编写高质量JavaScript的68个有效方法.html" class="nav-link">
+  编写高质量JavaScript的68个有效方法
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/编写可维护的JavaScript.html" class="nav-link">
+  编写可维护的JavaScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript上卷.html" class="nav-link">
+  你不知道的JavaScript(上卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/你不知道的JavaScript中卷.html" class="nav-link">
+  你不知道的JavaScript(中卷)
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/ES6标准入门.html" class="nav-link">
+  ES6标准入门
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解ES6.html" class="nav-link">
+  深入理解ES6
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入理解TypeScript.html" class="nav-link">
+  深入理解TypeScript
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/深入浅出Vue.js.html" class="nav-link">
+  深入浅出Vue.js
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/了不起的JavaScript工程师.html" class="nav-link">
+  了不起的JavaScript工程师
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript高级程序设计.html" class="nav-link">
+  JavaScript高级程序设计
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象编程指南.html" class="nav-link">
+  JavaScript面向对象编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript面向对象精要.html" class="nav-link">
+  JavaScript面向对象精要
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript函数式编程指南.html" class="nav-link">
+  JavaScript函数式编程指南
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript忍者秘籍.html" class="nav-link">
+  JavaScript忍者秘籍
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/JavaScript编程精解.html" class="nav-link">
+  JavaScript编程精解
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript语言精髓与编程实践.html" class="nav-link">
+  JavaScript语言精髓与编程实践
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript设计模式与开发实战.html" class="nav-link">
+  JavaScript设计模式与开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/javascript/Javascript框架设计.html" class="nav-link">
+  JavaScript框架设计
+</a></li></ul></li><li class="dropdown-item"><h4>
+          Node书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/node/Node.js实战.html" class="nav-link">
+  Node.js实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js开发实战.html" class="nav-link">
+  Node.js开发实战
+</a></li><li class="dropdown-subitem"><a href="/books/node/Node.js设计模式.html" class="nav-link">
+  Node.js设计模式
+</a></li></ul></li><li class="dropdown-item"><h4>
+          算法书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/algorithmic/学习JavaScript数据结构与算法.html" class="nav-link">
+  学习JavaScript数据结构与算法
+</a></li></ul></li><li class="dropdown-item"><h4>
+          css书籍
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/books/css/css揭秘.html" class="nav-link">
+  CSS揭秘
+</a></li></ul></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="面经" class="dropdown-title"><span class="title">面经</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><h4>
+          基础
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/JavaScript.html" class="nav-link">
+  JavaScript
+</a></li><li class="dropdown-subitem"><a href="/interview/CSS.html" class="nav-link">
+  CSS
+</a></li><li class="dropdown-subitem"><a href="/interview/HTTP.html" class="nav-link">
+  HTTP
+</a></li></ul></li><li class="dropdown-item"><h4>
+          进阶
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/设计模式.html" class="nav-link">
+  设计模式
+</a></li><li class="dropdown-subitem"><a href="/interview/Node.html" class="nav-link">
+  Node
+</a></li><li class="dropdown-subitem"><a href="/interview/算法.html" class="nav-link">
+  算法
+</a></li><li class="dropdown-subitem"><a href="/interview/兼容性.html" class="nav-link">
+  兼容性
+</a></li><li class="dropdown-subitem"><a href="/interview/缓存.html" class="nav-link">
+  缓存
+</a></li><li class="dropdown-subitem"><a href="/interview/性能优化.html" class="nav-link">
+  性能优化
+</a></li></ul></li><li class="dropdown-item"><h4>
+          RunTime
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/浏览器.html" class="nav-link">
+  浏览器
+</a></li><li class="dropdown-subitem"><a href="/interview/Webpack.html" class="nav-link">
+  Webpack
+</a></li></ul></li><li class="dropdown-item"><h4>
+          选型
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Vue.html" class="nav-link">
+  Vue
+</a></li><li class="dropdown-subitem"><a href="/interview/React.html" class="nav-link">
+  React
+</a></li></ul></li><li class="dropdown-item"><h4>
+          能力周边
+        </h4> <ul class="dropdown-subitem-wrapper"><li class="dropdown-subitem"><a href="/interview/Git操作.html" class="nav-link">
+  Git操作
+</a></li><li class="dropdown-subitem"><a href="/interview/前端监控.html" class="nav-link">
+  前端监控
+</a></li><li class="dropdown-subitem"><a href="/interview/安全防范.html" class="nav-link">
+  安全防范
+</a></li></ul></li></ul></div></div><div class="nav-item"><a href="/practice/" class="nav-link">
+  最佳实践
+</a></div><div class="nav-item"><a href="/summary/" class="nav-link">
+  只言片语
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>JavaScript 语言精髓与编程实践</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-1-章-二十年来的-javascript" class="sidebar-link">第 1 章 二十年来的 JavaScript</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-1-网页中的代码" class="sidebar-link">1.1 网页中的代码</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-2-用-javascript-来写浏览器上的应用" class="sidebar-link">1.2 用 JavaScript 来写浏览器上的应用</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-3-没有框架和库的语言能怎样发展呢" class="sidebar-link">1.3 没有框架和库的语言能怎样发展呢</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-4-语言的进化" class="sidebar-link">1.4 语言的进化</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-5-大型系统开发" class="sidebar-link">1.5 大型系统开发</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-6-为-javascript-正名" class="sidebar-link">1.6 为 JavaScript 正名</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_1-7-javascript-的应用环境" class="sidebar-link">1.7 JavaScript 的应用环境</a></li></ul></li><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-2-章-javascript-的语法" class="sidebar-link">第 2 章 JavaScript 的语法</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-1-语法综述" class="sidebar-link">2.1 语法综述</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-2-javascript-的语法：声明" class="sidebar-link">2.2 JavaScript 的语法：声明</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-3-javascript-的语法：表达式运算" class="sidebar-link">2.3 JavaScript 的语法：表达式运算</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-4-javascript-的语法：语句" class="sidebar-link">2.4 JavaScript 的语法：语句</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-5-javascript-的语法：模块" class="sidebar-link">2.5 JavaScript 的语法：模块</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-6-严格模式下的语法限制" class="sidebar-link">2.6 严格模式下的语法限制</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_2-7-运算符的二义性" class="sidebar-link">2.7 运算符的二义性</a></li></ul></li><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-3-章-javascript-的面向对象语言特性" class="sidebar-link">第 3 章 JavaScript 的面向对象语言特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_3-1-面向对象编程的语法概要" class="sidebar-link">3.1 面向对象编程的语法概要</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_3-2-javascript-的原型继承" class="sidebar-link">3.2 JavaScript 的原型继承</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_3-3-javascript-的类继承" class="sidebar-link">3.3 JavaScript 的类继承</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_3-4-javascript-的对象系统" class="sidebar-link">3.4 JavaScript 的对象系统</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_3-5-可定制的对象属性" class="sidebar-link">3.5 可定制的对象属性</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_3-6-运行期侵入与元编程系统" class="sidebar-link">3.6 运行期侵入与元编程系统</a></li></ul></li><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-4-章-javascript-语言的结构化" class="sidebar-link">第 4 章 JavaScript 语言的结构化</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-1-概述" class="sidebar-link">4.1 概述</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-2-基本的组织元素" class="sidebar-link">4.2 基本的组织元素</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-3-声明" class="sidebar-link">4.3 声明</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-4-语句与代码分块" class="sidebar-link">4.4 语句与代码分块</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-5-组织形式分块的方法" class="sidebar-link">4.5 组织形式分块的方法</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-6-层次结构程序设计" class="sidebar-link">4.6 层次结构程序设计</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-7-历史遗产：变量作用域" class="sidebar-link">4.7 历史遗产：变量作用域</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_4-8-私有属性与私有字段的纷争" class="sidebar-link">4.8 私有属性与私有字段的纷争</a></li></ul></li><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-5-章-javascript-的函数式语言特性" class="sidebar-link">第 5 章 JavaScript 的函数式语言特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_5-1-概述" class="sidebar-link">5.1 概述</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_5-2-从运算式语言到函数式语言" class="sidebar-link">5.2 从运算式语言到函数式语言</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_5-3-javascript-中的函数" class="sidebar-link">5.3 JavaScript 中的函数</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_5-4-函数的行为" class="sidebar-link">5.4 函数的行为</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_5-5-闭包" class="sidebar-link">5.5 闭包</a></li></ul></li><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-6-章-javascript-的动态语言特性" class="sidebar-link">第 6 章 JavaScript 的动态语言特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-1-概述" class="sidebar-link">6.1 概述</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-2-动态类型：对象与值类型之间的转换" class="sidebar-link">6.2 动态类型：对象与值类型之间的转换</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-3-动态类型：值类型的转换" class="sidebar-link">6.3 动态类型：值类型的转换</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-4-动态类型：对象与数组的动态特性" class="sidebar-link">6.4 动态类型：对象与数组的动态特性</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-5-重写" class="sidebar-link">6.5 重写</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-6-动态执行" class="sidebar-link">6.6 动态执行</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-7-动态方法调用-call、apply、bind" class="sidebar-link">6.7 动态方法调用(call、apply、bind)</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_6-8-通用执行环境的实现" class="sidebar-link">6.8 通用执行环境的实现</a></li></ul></li><li><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#第-7-章-javascript-的并行语言特性" class="sidebar-link">第 7 章 JavaScript 的并行语言特性</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_7-1-概述" class="sidebar-link">7.1 概述</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_7-2-promise-的核心机制" class="sidebar-link">7.2 Promise 的核心机制</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_7-3-与其他语言特性的交集" class="sidebar-link">7.3 与其他语言特性的交集</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_7-4-javascript-中对并发的支持" class="sidebar-link">7.4 JavaScript 中对并发的支持</a></li><li class="sidebar-sub-header"><a href="/books/javascript/Javascript%E8%AF%AD%E8%A8%80%E7%B2%BE%E9%AB%93%E4%B8%8E%E7%BC%96%E7%A8%8B%E5%AE%9E%E8%B7%B5.html#_7-5-在分布式网络环境中并行执行" class="sidebar-link">7.5 在分布式网络环境中并行执行</a></li></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="javascript-语言精髓与编程实践"><a href="#javascript-语言精髓与编程实践" class="header-anchor">#</a> JavaScript 语言精髓与编程实践</h1> <p><img src="/assets/img/j14.1457b052.jpg" alt="JavaScript语言精髓与编程实践"></p><div class="table-of-contents"><ul><li><a href="#第-1-章-二十年来的-javascript">第 1 章 二十年来的 JavaScript</a><ul><li><a href="#_1-1-网页中的代码">1.1 网页中的代码</a></li><li><a href="#_1-2-用-javascript-来写浏览器上的应用">1.2 用 JavaScript 来写浏览器上的应用</a></li><li><a href="#_1-3-没有框架和库的语言能怎样发展呢">1.3 没有框架和库的语言能怎样发展呢</a></li><li><a href="#_1-4-语言的进化">1.4 语言的进化</a></li><li><a href="#_1-5-大型系统开发">1.5 大型系统开发</a></li><li><a href="#_1-6-为-javascript-正名">1.6 为 JavaScript 正名</a></li><li><a href="#_1-7-javascript-的应用环境">1.7 JavaScript 的应用环境</a></li></ul></li><li><a href="#第-2-章-javascript-的语法">第 2 章 JavaScript 的语法</a><ul><li><a href="#_2-1-语法综述">2.1 语法综述</a></li><li><a href="#_2-2-javascript-的语法：声明">2.2 JavaScript 的语法：声明</a></li><li><a href="#_2-3-javascript-的语法：表达式运算">2.3 JavaScript 的语法：表达式运算</a></li><li><a href="#_2-4-javascript-的语法：语句">2.4 JavaScript 的语法：语句</a></li><li><a href="#_2-5-javascript-的语法：模块">2.5 JavaScript 的语法：模块</a></li><li><a href="#_2-6-严格模式下的语法限制">2.6 严格模式下的语法限制</a></li><li><a href="#_2-7-运算符的二义性">2.7 运算符的二义性</a></li></ul></li><li><a href="#第-3-章-javascript-的面向对象语言特性">第 3 章 JavaScript 的面向对象语言特性</a><ul><li><a href="#_3-1-面向对象编程的语法概要">3.1 面向对象编程的语法概要</a></li><li><a href="#_3-2-javascript-的原型继承">3.2 JavaScript 的原型继承</a></li><li><a href="#_3-3-javascript-的类继承">3.3 JavaScript 的类继承</a></li><li><a href="#_3-4-javascript-的对象系统">3.4 JavaScript 的对象系统</a></li><li><a href="#_3-5-可定制的对象属性">3.5 可定制的对象属性</a></li><li><a href="#_3-6-运行期侵入与元编程系统">3.6 运行期侵入与元编程系统</a></li></ul></li><li><a href="#第-4-章-javascript-语言的结构化">第 4 章 JavaScript 语言的结构化</a><ul><li><a href="#_4-1-概述">4.1 概述</a></li><li><a href="#_4-2-基本的组织元素">4.2 基本的组织元素</a></li><li><a href="#_4-3-声明">4.3 声明</a></li><li><a href="#_4-4-语句与代码分块">4.4 语句与代码分块</a></li><li><a href="#_4-5-组织形式分块的方法">4.5 组织形式分块的方法</a></li><li><a href="#_4-6-层次结构程序设计">4.6 层次结构程序设计</a></li><li><a href="#_4-7-历史遗产：变量作用域">4.7 历史遗产：变量作用域</a></li><li><a href="#_4-8-私有属性与私有字段的纷争">4.8 私有属性与私有字段的纷争</a></li></ul></li><li><a href="#第-5-章-javascript-的函数式语言特性">第 5 章 JavaScript 的函数式语言特性</a><ul><li><a href="#_5-1-概述">5.1 概述</a></li><li><a href="#_5-2-从运算式语言到函数式语言">5.2 从运算式语言到函数式语言</a></li><li><a href="#_5-3-javascript-中的函数">5.3 JavaScript 中的函数</a></li><li><a href="#_5-4-函数的行为">5.4 函数的行为</a></li><li><a href="#_5-5-闭包">5.5 闭包</a></li></ul></li><li><a href="#第-6-章-javascript-的动态语言特性">第 6 章 JavaScript 的动态语言特性</a><ul><li><a href="#_6-1-概述">6.1 概述</a></li><li><a href="#_6-2-动态类型：对象与值类型之间的转换">6.2 动态类型：对象与值类型之间的转换</a></li><li><a href="#_6-3-动态类型：值类型的转换">6.3 动态类型：值类型的转换</a></li><li><a href="#_6-4-动态类型：对象与数组的动态特性">6.4 动态类型：对象与数组的动态特性</a></li><li><a href="#_6-5-重写">6.5 重写</a></li><li><a href="#_6-6-动态执行">6.6 动态执行</a></li><li><a href="#_6-7-动态方法调用-call、apply、bind">6.7 动态方法调用(call、apply、bind)</a></li><li><a href="#_6-8-通用执行环境的实现">6.8 通用执行环境的实现</a></li></ul></li><li><a href="#第-7-章-javascript-的并行语言特性">第 7 章 JavaScript 的并行语言特性</a><ul><li><a href="#_7-1-概述">7.1 概述</a></li><li><a href="#_7-2-promise-的核心机制">7.2 Promise 的核心机制</a></li><li><a href="#_7-3-与其他语言特性的交集">7.3 与其他语言特性的交集</a></li><li><a href="#_7-4-javascript-中对并发的支持">7.4 JavaScript 中对并发的支持</a></li><li><a href="#_7-5-在分布式网络环境中并行执行">7.5 在分布式网络环境中并行执行</a></li></ul></li></ul></div><p></p> <h2 id="第-1-章-二十年来的-javascript"><a href="#第-1-章-二十年来的-javascript" class="header-anchor">#</a> 第 1 章 二十年来的 JavaScript</h2> <h3 id="_1-1-网页中的代码"><a href="#_1-1-网页中的代码" class="header-anchor">#</a> 1.1 网页中的代码</h3> <h3 id="_1-2-用-javascript-来写浏览器上的应用"><a href="#_1-2-用-javascript-来写浏览器上的应用" class="header-anchor">#</a> 1.2 用 JavaScript 来写浏览器上的应用</h3> <h3 id="_1-3-没有框架和库的语言能怎样发展呢"><a href="#_1-3-没有框架和库的语言能怎样发展呢" class="header-anchor">#</a> 1.3 没有框架和库的语言能怎样发展呢</h3> <h3 id="_1-4-语言的进化"><a href="#_1-4-语言的进化" class="header-anchor">#</a> 1.4 语言的进化</h3> <h3 id="_1-5-大型系统开发"><a href="#_1-5-大型系统开发" class="header-anchor">#</a> 1.5 大型系统开发</h3> <h3 id="_1-6-为-javascript-正名"><a href="#_1-6-为-javascript-正名" class="header-anchor">#</a> 1.6 为 JavaScript 正名</h3> <h3 id="_1-7-javascript-的应用环境"><a href="#_1-7-javascript-的应用环境" class="header-anchor">#</a> 1.7 JavaScript 的应用环境</h3> <h2 id="第-2-章-javascript-的语法"><a href="#第-2-章-javascript-的语法" class="header-anchor">#</a> 第 2 章 JavaScript 的语法</h2> <h3 id="_2-1-语法综述"><a href="#_2-1-语法综述" class="header-anchor">#</a> 2.1 语法综述</h3> <h3 id="_2-2-javascript-的语法：声明"><a href="#_2-2-javascript-的语法：声明" class="header-anchor">#</a> 2.2 JavaScript 的语法：声明</h3> <h3 id="_2-3-javascript-的语法：表达式运算"><a href="#_2-3-javascript-的语法：表达式运算" class="header-anchor">#</a> 2.3 JavaScript 的语法：表达式运算</h3> <h3 id="_2-4-javascript-的语法：语句"><a href="#_2-4-javascript-的语法：语句" class="header-anchor">#</a> 2.4 JavaScript 的语法：语句</h3> <h3 id="_2-5-javascript-的语法：模块"><a href="#_2-5-javascript-的语法：模块" class="header-anchor">#</a> 2.5 JavaScript 的语法：模块</h3> <h3 id="_2-6-严格模式下的语法限制"><a href="#_2-6-严格模式下的语法限制" class="header-anchor">#</a> 2.6 严格模式下的语法限制</h3> <h3 id="_2-7-运算符的二义性"><a href="#_2-7-运算符的二义性" class="header-anchor">#</a> 2.7 运算符的二义性</h3> <h2 id="第-3-章-javascript-的面向对象语言特性"><a href="#第-3-章-javascript-的面向对象语言特性" class="header-anchor">#</a> 第 3 章 JavaScript 的面向对象语言特性</h2> <h3 id="_3-1-面向对象编程的语法概要"><a href="#_3-1-面向对象编程的语法概要" class="header-anchor">#</a> 3.1 面向对象编程的语法概要</h3> <h3 id="_3-2-javascript-的原型继承"><a href="#_3-2-javascript-的原型继承" class="header-anchor">#</a> 3.2 JavaScript 的原型继承</h3> <h3 id="_3-3-javascript-的类继承"><a href="#_3-3-javascript-的类继承" class="header-anchor">#</a> 3.3 JavaScript 的类继承</h3> <h3 id="_3-4-javascript-的对象系统"><a href="#_3-4-javascript-的对象系统" class="header-anchor">#</a> 3.4 JavaScript 的对象系统</h3> <h3 id="_3-5-可定制的对象属性"><a href="#_3-5-可定制的对象属性" class="header-anchor">#</a> 3.5 可定制的对象属性</h3> <h3 id="_3-6-运行期侵入与元编程系统"><a href="#_3-6-运行期侵入与元编程系统" class="header-anchor">#</a> 3.6 运行期侵入与元编程系统</h3> <h2 id="第-4-章-javascript-语言的结构化"><a href="#第-4-章-javascript-语言的结构化" class="header-anchor">#</a> 第 4 章 JavaScript 语言的结构化</h2> <h3 id="_4-1-概述"><a href="#_4-1-概述" class="header-anchor">#</a> 4.1 概述</h3> <h3 id="_4-2-基本的组织元素"><a href="#_4-2-基本的组织元素" class="header-anchor">#</a> 4.2 基本的组织元素</h3> <h3 id="_4-3-声明"><a href="#_4-3-声明" class="header-anchor">#</a> 4.3 声明</h3> <h3 id="_4-4-语句与代码分块"><a href="#_4-4-语句与代码分块" class="header-anchor">#</a> 4.4 语句与代码分块</h3> <h3 id="_4-5-组织形式分块的方法"><a href="#_4-5-组织形式分块的方法" class="header-anchor">#</a> 4.5 组织形式分块的方法</h3> <h3 id="_4-6-层次结构程序设计"><a href="#_4-6-层次结构程序设计" class="header-anchor">#</a> 4.6 层次结构程序设计</h3> <h3 id="_4-7-历史遗产：变量作用域"><a href="#_4-7-历史遗产：变量作用域" class="header-anchor">#</a> 4.7 历史遗产：变量作用域</h3> <h3 id="_4-8-私有属性与私有字段的纷争"><a href="#_4-8-私有属性与私有字段的纷争" class="header-anchor">#</a> 4.8 私有属性与私有字段的纷争</h3> <h2 id="第-5-章-javascript-的函数式语言特性"><a href="#第-5-章-javascript-的函数式语言特性" class="header-anchor">#</a> 第 5 章 JavaScript 的函数式语言特性</h2> <h3 id="_5-1-概述"><a href="#_5-1-概述" class="header-anchor">#</a> 5.1 概述</h3> <h3 id="_5-2-从运算式语言到函数式语言"><a href="#_5-2-从运算式语言到函数式语言" class="header-anchor">#</a> 5.2 从运算式语言到函数式语言</h3> <h3 id="_5-3-javascript-中的函数"><a href="#_5-3-javascript-中的函数" class="header-anchor">#</a> 5.3 JavaScript 中的函数</h3> <h3 id="_5-4-函数的行为"><a href="#_5-4-函数的行为" class="header-anchor">#</a> 5.4 函数的行为</h3> <h3 id="_5-5-闭包"><a href="#_5-5-闭包" class="header-anchor">#</a> 5.5 闭包</h3> <h2 id="第-6-章-javascript-的动态语言特性"><a href="#第-6-章-javascript-的动态语言特性" class="header-anchor">#</a> 第 6 章 JavaScript 的动态语言特性</h2> <h3 id="_6-1-概述"><a href="#_6-1-概述" class="header-anchor">#</a> 6.1 概述</h3> <h3 id="_6-2-动态类型：对象与值类型之间的转换"><a href="#_6-2-动态类型：对象与值类型之间的转换" class="header-anchor">#</a> 6.2 动态类型：对象与值类型之间的转换</h3> <h3 id="_6-3-动态类型：值类型的转换"><a href="#_6-3-动态类型：值类型的转换" class="header-anchor">#</a> 6.3 动态类型：值类型的转换</h3> <h3 id="_6-4-动态类型：对象与数组的动态特性"><a href="#_6-4-动态类型：对象与数组的动态特性" class="header-anchor">#</a> 6.4 动态类型：对象与数组的动态特性</h3> <h3 id="_6-5-重写"><a href="#_6-5-重写" class="header-anchor">#</a> 6.5 重写</h3> <h3 id="_6-6-动态执行"><a href="#_6-6-动态执行" class="header-anchor">#</a> 6.6 动态执行</h3> <h3 id="_6-7-动态方法调用-call、apply、bind"><a href="#_6-7-动态方法调用-call、apply、bind" class="header-anchor">#</a> 6.7 动态方法调用(call、apply、bind)</h3> <h3 id="_6-8-通用执行环境的实现"><a href="#_6-8-通用执行环境的实现" class="header-anchor">#</a> 6.8 通用执行环境的实现</h3> <h2 id="第-7-章-javascript-的并行语言特性"><a href="#第-7-章-javascript-的并行语言特性" class="header-anchor">#</a> 第 7 章 JavaScript 的并行语言特性</h2> <h3 id="_7-1-概述"><a href="#_7-1-概述" class="header-anchor">#</a> 7.1 概述</h3> <h3 id="_7-2-promise-的核心机制"><a href="#_7-2-promise-的核心机制" class="header-anchor">#</a> 7.2 Promise 的核心机制</h3> <h3 id="_7-3-与其他语言特性的交集"><a href="#_7-3-与其他语言特性的交集" class="header-anchor">#</a> 7.3 与其他语言特性的交集</h3> <h3 id="_7-4-javascript-中对并发的支持"><a href="#_7-4-javascript-中对并发的支持" class="header-anchor">#</a> 7.4 JavaScript 中对并发的支持</h3> <h3 id="_7-5-在分布式网络环境中并行执行"><a href="#_7-5-在分布式网络环境中并行执行" class="header-anchor">#</a> 7.5 在分布式网络环境中并行执行</h3></div> <footer class="page-edit"><!----> <div class="last-updated"><span class="prefix">最近更新时间:</span> <span class="time">11/4/2020, 10:47:16 PM</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ad74b50b.js" defer></script><script src="/assets/js/2.2054c3ab.js" defer></script><script src="/assets/js/25.1546e7a8.js" defer></script>
+  </body>
+</html>
